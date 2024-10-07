@@ -1,19 +1,30 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import bloglist from '../pages/bloglist.json';
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
 
-  // In a real app, you would fetch the blog post data based on the id
-  const post = {
-    title: `Blog Post ${id}`,
-    content: `This is the content of blog post ${id}.`,
-  };
+  console.log('Received id:', id);
+  console.log('All blog posts:', bloglist.bloglist);
+
+  const post = bloglist.bloglist.find(post => post.id === id);
+  console.log('Found post:', post);
+
+  if (!id) {
+    return <p>Error: No blog post ID provided</p>;
+  }
 
   return (
     <div className="blog-post">
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
+      {post ? (
+        <>
+          <h1>{post.title}</h1>
+          <p>{post.content}</p>
+        </>
+      ) : (
+        <p>Blog post not found for id: {id}</p>
+      )}
     </div>
   );
 };

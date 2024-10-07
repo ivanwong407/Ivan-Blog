@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -6,7 +5,7 @@ import Home from './pages/Home';
 import BlogPost from './pages/BlogPost';
 import About from './pages/About';
 
-const App: React.FC = () => {
+function App() {
   return (
     <Router>
       <div className="App">
@@ -14,7 +13,7 @@ const App: React.FC = () => {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/post/:id" element={<BlogPost />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
@@ -22,6 +21,6 @@ const App: React.FC = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default App;

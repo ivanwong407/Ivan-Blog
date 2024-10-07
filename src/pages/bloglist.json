@@ -1,0 +1,18 @@
+{
+  "bloglist": [
+    {
+      "id": "1",
+      "title": "Introduction to React",
+      "content": "React is a popular JavaScript library for building user interfaces...",
+      "category": "Website Development",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "2",
+      "title": "Understanding Microcontrollers",
+      "content": "Microcontrollers are small computers on a single integrated circuit...",
+      "category": "Electronic Engineering",
+      "date": "2023-06-05"
+    }
+  ]
+}

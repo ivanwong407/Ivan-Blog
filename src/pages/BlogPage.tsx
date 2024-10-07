@@ -3,33 +3,20 @@ import { BlogPost } from '../types/post';
 import CategoryFilter from '../components/CategoryFilter';
 import { Category } from '../types/categories';
 import '../styles/darkTheme.css';
+import bloglist from '../pages/bloglist.json';
 
 // Dummy data (in a real application, this would be fetched from an API or database)
-const dummyPosts: BlogPost[] = [
-  // Add dummy posts here
-  {
-    id: '1',
-    title: 'Introduction to React',
-    content: 'React is a popular JavaScript library for building user interfaces...',
-    category: 'Website Development',
-    date: '2023-06-01'
-  },
-  {
-    id: '2',
-    title: 'Understanding Microcontrollers',
-    content: 'Microcontrollers are small computers on a single integrated circuit...',
-    category: 'Electronic Engineering',
-    date: '2023-06-05'
-  },
-  // Add more dummy posts as needed
-];
+const blogPosts: BlogPost[] = bloglist.bloglist.map(post => ({
+  ...post,
+  category: post.category as Category
+}));
 
 const BlogPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const filteredPosts = selectedCategory
-    ? dummyPosts.filter((post) => post.category === selectedCategory)
-    : dummyPosts;
+    ? blogPosts.filter((post) => post.category === selectedCategory)
+    : blogPosts;
 
   return (
     <div className="container">
