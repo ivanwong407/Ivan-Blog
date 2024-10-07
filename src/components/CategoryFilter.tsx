@@ -1,5 +1,6 @@
 import React from 'react';
 import { categories } from '../types/categories';
+import '../styles/darkTheme.css';
 
 interface CategoryFilterProps {
   selectedCategory: string | null;
@@ -8,7 +9,7 @@ interface CategoryFilterProps {
 
 const CategoryFilter: React.FC<CategoryFilterProps> = ({ selectedCategory, onCategoryChange }) => {
   return (
-    <div>
+    <div className="category-filter">
       <h3>Categories</h3>
       <button onClick={() => onCategoryChange(null)} className={selectedCategory === null ? 'active' : ''}>
         All

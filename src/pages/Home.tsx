@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { BlogPost } from '../types/post';
 import CategoryFilter from '../components/CategoryFilter';
 import { Category } from '../types/categories';
+import '../styles/darkTheme.css';
 
 // Dummy data (in a real application, this would be fetched from an API or database)
 const dummyPosts: BlogPost[] = [
@@ -31,7 +32,7 @@ const Home: React.FC = () => {
     : dummyPosts;
 
   return (
-    <div>
+    <div className="container">
       <h1>Welcome to My Blog</h1>
       <CategoryFilter 
         selectedCategory={selectedCategory} 
