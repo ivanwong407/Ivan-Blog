@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { BlogPost } from '../types/post';
 import CategoryFilter from '../components/CategoryFilter';
 import { Category } from '../types/categories';
 
 // Dummy data (in a real application, this would be fetched from an API or database)
 const dummyPosts: BlogPost[] = [
+  // Add dummy posts here
   {
     id: '1',
     title: 'Introduction to React',
@@ -23,7 +23,7 @@ const dummyPosts: BlogPost[] = [
   // Add more dummy posts as needed
 ];
 
-const Home: React.FC = () => {
+const BlogPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
 
   const filteredPosts = selectedCategory
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h1>Welcome to My Blog</h1>
+      <h1>Blog</h1>
       <CategoryFilter 
         selectedCategory={selectedCategory} 
         onCategoryChange={(category) => setSelectedCategory(category as Category | null)} 
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       <div>
         {filteredPosts.map((post) => (
           <div key={post.id}>
-            <h2><Link to={`/blog/${post.id}`}>{post.title}</Link></h2>
+            <h2>{post.title}</h2>
             <p>Category: {post.category}</p>
             <p>Date: {post.date}</p>
             <p>{post.content.substring(0, 100)}...</p>
@@ -51,4 +51,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default BlogPage;
