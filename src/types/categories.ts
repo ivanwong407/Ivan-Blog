@@ -3,7 +3,9 @@ export const categories = [
   "Electronic Engineering",
   "Website Development",
   "Theory and Principle",
-  "Others"
+  "SEO",
+  "Network",
+  "Others",
 ] as const;
 
-export type Category = typeof categories[number];
+export type Category = (typeof categories)[number];
