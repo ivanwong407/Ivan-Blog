@@ -13,6 +13,94 @@
       "content": "Microcontrollers are small computers on a single integrated circuit...",
       "category": "Electronic Engineering",
       "date": "2023-06-05"
+    },
+    {
+      "id": "3",
+      "title": "Introduction to React",
+      "content": "React is a popular JavaScript library for building user interfaces...",
+      "detail": "React is a javascript code for the browser, which provide a simply way to manage the data and the view in website interface",
+      "category": "Website Development",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "4",
+      "title": "Introduction to linux",
+      "content": "Linux is a popular open-source operating system...",
+      "detail": "linux is a middleware btw device hardware and programmer software, it gave a simply way for programmer create their own software without the need to understand the hardware",
+      "category": "Linux",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "5",
+      "title": "Introduction to embedded system",
+      "content": "Embedded system is a computer system that is designed to perform a specific task...",
+      "detail": "Embedded system is a computer with explictly defined hardware and software, some embedded system is without operating system but only firmware",
+      "category": "Embedded System",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "6",
+      "title": "Introduction to computer network",
+      "content": "Computer network is a collection of computers and other devices connected to each other...",
+      "detail": "Computer network technology consist of hardware and software, the hardware is the network device like router, switch, and modem, the software is the network protocol like TCP/IP, HTTP, and FTP",
+      "category": "Computer Network",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "7",
+      "title": "How to be a better programmer",
+      "content": "To be a better programmer, you need to have a strong foundation in programming languages...",
+      "detail": "Here's some key fundamentals to be a better programmer, one all programming languge is created by specific purpose, so to learn a langauge quickly. the best way to knowing the difference btw other language",
+      "category": "Programming",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "8",
+      "title": "Introduction to software development",
+      "content": "Software development is the process of creating software...",
+      "detail": "Software just a bundle of code. The code could be divided into different things. 1. from programming language, which serve for specific application.",
+      "category": "Software Development",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "9",
+      "title": "introduction to programming language",
+      "content": "Programming language is a language that can be understood by computer...",
+      "detail": "To create a programming language, you need to create a compiler, and semantic analysis",
+      "category": "Programming Language",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "10",
+      "title": "Introduction to compiler",
+      "content": "Compiler is a program that translate the code from one language to another...",
+      "detail": "Compiler is a program that translate the code from one language to another, it consist of lexical analysis, syntax analysis, semantic analysis, and code generation",
+      "category": "Compiler",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "11",
+      "title": "Introduction to toolchain ",
+      "content": "Toolchain is a set of tools that help the programmer to create software...",
+      "detail": "Toolchain is a set of tools that help the programmer to create software, it consist of compiler, linker, and debugger",
+      "category": "Toolchain",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "12",
+      "title": "Introduction to container",
+      "content": "Container is a software that manage the hardware and software resource...",
+      "detail": "Container is a software that manage the hardware and software resource, it consist of kernel, shell, and application",
+      "category": "Container",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "13",
+      "title": "Introduction to kernel",
+      "content": "",
+      "detail": "",
+      "category": "Kernal",
+      "date": "2023-06-01"
     }
   ]
 }
