@@ -26,7 +26,10 @@
       "id": "4",
       "title": "Introduction to linux",
       "content": "Linux is a popular open-source operating system...",
-      "detail": "linux is a middleware btw device hardware and programmer software, it gave a simply way for programmer create their own software without the need to understand the hardware",
+      "detail": [
+        "linux is a middleware btw device hardware and programmer software, it gave a simply way for programmer create their own software without the need to understand the hardware",
+        "i will say that OS is like a our thought, it is the software that run in our brain, and tell our body what to do"
+      ],
       "category": "Linux",
       "date": "2023-06-01"
     },
