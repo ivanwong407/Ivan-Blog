@@ -28,7 +28,12 @@
       "content": "Linux is a popular open-source operating system...",
       "detail": [
         "linux is a middleware btw device hardware and programmer software, it gave a simply way for programmer create their own software without the need to understand the hardware",
-        "i will say that OS is like a our thought, it is the software that run in our brain, and tell our body what to do"
+        "i will say that OS is like a our thought, it is the software that run in our brain, and tell our body what to do",
+        "But there's existing different OS, like windows, mac, and linux, they are different in their own way, but they all have the same purpose, to manage the hardware and software resource",
+        "The difference between them is the way they manage the hardware and software resource, and the way they manage the data",
+        "For example, windows and mac OS are highly bundled system, it's hard to customize your system, but linux is more flexible, you can customize your system as you want",
+        "As a result, Linux could be a lightweight system. If you download a linux OS, it only take a few GB space, but windows OS could take up to 100GB space ",
+        "therefore, most of the embedded system only support linux OS to reduce the system resource, and be a efficient system"
       ],
       "category": "Linux",
       "date": "2023-06-01"
@@ -37,7 +42,11 @@
       "id": "5",
       "title": "Introduction to embedded system",
       "content": "Embedded system is a computer system that is designed to perform a specific task...",
-      "detail": "Embedded system is a computer with explictly defined hardware and software, some embedded system is without operating system but only firmware",
+      "detail": [
+        "Embedded system is a computer with explictly defined hardware and software, some embedded system is without operating system but only firmware",
+        "Some embedded system designed with time constraint, so they have to be responsive, and efficient, that's why some embedded system is only using firmware",
+        "Here's a technical term for embedded system, it is called 'real-time system', it is a system that must respond to events within a specific time frame"
+      ],
       "category": "Embedded System",
       "date": "2023-06-01"
     },
@@ -91,7 +100,7 @@
     },
     {
       "id": "12",
-      "title": "Introduction to container",
+      "title": "Introduction to Container",
       "content": "Container is a software that manage the hardware and software resource...",
       "detail": "Container is a software that manage the hardware and software resource, it consist of kernel, shell, and application",
       "category": "Container",
@@ -103,6 +112,22 @@
       "content": "",
       "detail": "",
       "category": "Kernal",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "14",
+      "title": "Introduction to web server",
+      "content": "",
+      "detail": "",
+      "category": "Web Server",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "15",
+      "title": "Introduction to web application",
+      "content": "",
+      "detail": "",
+      "category": "Web Server",
       "date": "2023-06-01"
     }
   ]
