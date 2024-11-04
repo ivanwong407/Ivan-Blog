@@ -5,10 +5,12 @@ import CategoryFilter from "../components/CategoryFilter";
 import { Category } from "../types/categories";
 import "../styles/darkTheme.css";
 import bloglist from "../pages/bloglist.json";
-// Dummy data (in a real application, this would be fetched from an API or database)
+import MarkdownContent from "../components/MarkdownContent";
+
 const blogPosts: BlogPost[] = bloglist.bloglist.map((post) => ({
   ...post,
   category: post.category as Category,
+  detail: post.detail as string,
 }));
 
 const Home: React.FC = () => {
@@ -23,6 +25,7 @@ const Home: React.FC = () => {
   return (
     <div className="container">
       <h1>Welcome to My Blog</h1>
+      <MarkdownContent />
       <CategoryFilter
         selectedCategory={selectedCategory}
         onCategoryChange={(category) =>

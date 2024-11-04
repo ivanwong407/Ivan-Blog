@@ -9,6 +9,7 @@ import bloglist from "../pages/bloglist.json";
 const blogPosts: BlogPost[] = bloglist.bloglist.map((post) => ({
   ...post,
   category: post.category as Category,
+  detail: post.detail as string,
 }));
 
 const BlogPage: React.FC = () => {
